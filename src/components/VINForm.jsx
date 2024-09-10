@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { IoSearchOutline } from "react-icons/io5";
 import { Form } from "../Styles";
+import { Button } from "@mui/material";
 
 function VINForm({ onDecode }) {
   const [vin, setVin] = useState("");
@@ -41,9 +42,10 @@ function VINForm({ onDecode }) {
           className=".vinSearch_input"
           placeholder="Наприклад: 1FTFW1CT5DFC10312"
         />
-        <button type="submit" className=".vinSearch_submit">
+
+        <Button variant="contained" type="submit" className=".vinSearch_submit">
           <IoSearchOutline />
-        </button>
+        </Button>
       </Form>
       {error && <p className="error">{error}</p>}
     </div>

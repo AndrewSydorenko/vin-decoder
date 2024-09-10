@@ -1,20 +1,24 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { VariablesList } from "../../Styles";
+import Button from "@mui/material/Button";
 
 function Variables() {
   const [variables, setVariables] = useState([]);
   const [error, setError] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     const fetchVariables = async () => {
       try {
+        setIsLoading(true);
         const response = await axios.get(
           "https://vpic.nhtsa.dot.gov/api/vehicles/getvehiclevariablelist?format=json"
         );
         setVariables(response.data.Results);
-        console.log(response.data.Results);
+        setIsLoading(false);
       } catch (err) {
         setError("Не вдалося завантажити список змінних.");
       }
@@ -22,13 +26,18 @@ function Variables() {
     fetchVariables();
   }, []);
 
-  if (error) return <p className="error">{error}</p>;
-  if (variables.length === 0) return <p>Завантаження...</p>;
+  const navigate = useNavigate();
+  if (error) return <p>{error}</p>;
 
   return (
-    <div className="container">
-      <VariablesList>
-        <h2>Список змінних</h2>
+    <VariablesList>
+      <h2>All variables</h2>
+      <Button onClick={() => navigate(-1)} variant="outlined">
+        Go back
+      </Button>
+      {isLoading ? (
+        <h3>Loading...</h3>
+      ) : (
         <table>
           <tbody>
             {variables.map((variable) => (
@@ -40,8 +49,8 @@ function Variables() {
             ))}
           </tbody>
         </table>
-      </VariablesList>
-    </div>
+      )}
+    </VariablesList>
   );
 }
 

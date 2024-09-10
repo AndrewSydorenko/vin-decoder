@@ -11,6 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 li {
   list-style: none;
 }
@@ -26,4 +27,30 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+button {
+  border: 1px solid #118dc7;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  padding: 10px;
+  border: none;
+  background-color: aliceblue;
+  color: #118dc7;
+  border-radius: 3px;
+
+  &:hover {
+    color: aliceblue;
+    background-color: #118dc7;
+  }
+}
+
+th,
+td {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(160 160 160);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background: aliceblue;
 }

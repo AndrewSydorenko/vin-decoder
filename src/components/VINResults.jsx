@@ -1,25 +1,29 @@
 import React from "react";
-import { Results } from "../Styles";
+import { Link } from "react-router-dom";
 
 function VINResults({ results }) {
   if (!results || results.length === 0) return null;
 
   return (
-    <Results>
+    <div>
       <table>
         <tbody>
           {results.map(
             (item, index) =>
               item.Value && (
                 <tr key={index}>
-                  <th className="varTitle">{item.Variable} </th>
-                  <td className="varDescr">{item.Value}</td>
+                  <td>
+                    <Link to={`/variables/${item.VariableId}`}>
+                      {item.Variable}
+                    </Link>
+                  </td>
+                  <td>{item.Value}</td>
                 </tr>
               )
           )}
         </tbody>
       </table>
-    </Results>
+    </div>
   );
 }
 
