@@ -16,7 +16,7 @@ function App() {
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
           <Route
-            path="/"
+            index
             element={<Home />}
           />
           <Route

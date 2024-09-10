@@ -20,6 +20,8 @@ function VariableDetailPage() {
         );
         if (response) {
           setVariable(response.data.Results);
+          console.log(response);
+
           setIsLoading(false);
         } else {
           setError("Змінна не знайдена.");
