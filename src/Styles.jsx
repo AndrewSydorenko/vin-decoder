@@ -1,5 +1,30 @@
 import styled from "styled-components";
 
+export const Header = styled.header`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid black;
+  @media screen and (min-width: ("480px")) {
+    flex-direction: column;
+  }
+
+  > nav {
+    display: flex;
+    gap: 20px;
+  }
+  h1 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 50px;
+    color: #118dc7;
+    text-align: center;
+  }
+`;
+
 export const Main = styled.div`
   display: flex;
   flex-direction: column;
@@ -7,13 +32,6 @@ export const Main = styled.div`
   align-items: center;
   padding: 20px;
   gap: 20px;
-
-  h1 {
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 50px;
-    color: #118dc7;
-    text-align: center;
-  }
 `;
 
 export const Form = styled.form`
@@ -28,7 +46,7 @@ export const Form = styled.form`
     border: 1px solid #118dc7;
     border-radius: 3px;
     color: #118dc7;
-    @media screen and (min-width: ${"480px"}) {
+    @media screen and (min-width: "480px") {
       width: 250px;
     }
     &:focus-visible {

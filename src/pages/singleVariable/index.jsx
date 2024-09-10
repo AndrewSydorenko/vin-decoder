@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { VariableDetails } from "../../Styles";
 import axios from "axios";
 import { Button } from "@mui/material";
+import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 
 function VariableDetailPage() {
   const { variableId } = useParams();
@@ -41,7 +42,7 @@ function VariableDetailPage() {
     <VariableDetails>
       <h2>Variable details</h2>
       <Button onClick={() => navigate(-1)} variant="outlined">
-        Go back
+        <KeyboardBackspaceIcon />
       </Button>
       {isLoading ? (
         <h3>Loading...</h3>

@@ -28,6 +28,7 @@ function VINForm({ onDecode }) {
     }
     setError("");
     onDecode(vin);
+    setVin("");
   };
 
   return (
