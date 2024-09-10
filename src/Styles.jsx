@@ -15,7 +15,6 @@ export const Header = styled.header`
 
   > nav {
     display: flex;
-    gap: 20px;
   }
   h1 {
     font-family: Georgia, "Times New Roman", Times, serif;
