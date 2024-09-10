@@ -1,7 +1,7 @@
 {
   "name": "vin-decoder",
   "version": "0.1.0",
-  "homepage": "https://gitname.github.io/vin-decoder",
+  "homepage": "https://andrewsydorenko.github.io/vin-decoder",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.13.3",

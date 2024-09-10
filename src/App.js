@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div className="App">
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div className='loading'>Loading...</div>}>
         <Routes>
           <Route
             index
