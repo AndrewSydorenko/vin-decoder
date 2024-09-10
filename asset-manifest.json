@@ -1,13 +1,25 @@
 {
   "files": {
-    "main.css": "/vin-decoder/static/css/main.5613056f.css",
-    "main.js": "/vin-decoder/static/js/main.661a2ce1.js",
+    "main.css": "/vin-decoder/static/css/main.b489bff0.css",
+    "main.js": "/vin-decoder/static/js/main.aba08f7e.js",
+    "static/js/21.f4ad2e72.chunk.js": "/vin-decoder/static/js/21.f4ad2e72.chunk.js",
+    "static/js/308.4b461c02.chunk.js": "/vin-decoder/static/js/308.4b461c02.chunk.js",
+    "static/js/886.4d1b46cb.chunk.js": "/vin-decoder/static/js/886.4d1b46cb.chunk.js",
+    "static/js/903.41a4a205.chunk.js": "/vin-decoder/static/js/903.41a4a205.chunk.js",
+    "static/js/317.1a2cdcbf.chunk.js": "/vin-decoder/static/js/317.1a2cdcbf.chunk.js",
+    "static/js/484.c049313a.chunk.js": "/vin-decoder/static/js/484.c049313a.chunk.js",
     "index.html": "/vin-decoder/index.html",
-    "main.5613056f.css.map": "/vin-decoder/static/css/main.5613056f.css.map",
-    "main.661a2ce1.js.map": "/vin-decoder/static/js/main.661a2ce1.js.map"
+    "main.b489bff0.css.map": "/vin-decoder/static/css/main.b489bff0.css.map",
+    "main.aba08f7e.js.map": "/vin-decoder/static/js/main.aba08f7e.js.map",
+    "21.f4ad2e72.chunk.js.map": "/vin-decoder/static/js/21.f4ad2e72.chunk.js.map",
+    "308.4b461c02.chunk.js.map": "/vin-decoder/static/js/308.4b461c02.chunk.js.map",
+    "886.4d1b46cb.chunk.js.map": "/vin-decoder/static/js/886.4d1b46cb.chunk.js.map",
+    "903.41a4a205.chunk.js.map": "/vin-decoder/static/js/903.41a4a205.chunk.js.map",
+    "317.1a2cdcbf.chunk.js.map": "/vin-decoder/static/js/317.1a2cdcbf.chunk.js.map",
+    "484.c049313a.chunk.js.map": "/vin-decoder/static/js/484.c049313a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5613056f.css",
-    "static/js/main.661a2ce1.js"
+    "static/css/main.b489bff0.css",
+    "static/js/main.aba08f7e.js"
   ]
 }
